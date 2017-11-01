@@ -1,31 +1,5 @@
 #app {
-  @import 'base/all.scss';
+  @import 'components/all';
   @import 'utils/all';
-  @import 'components/all.scss';
+  @import 'base/all';
 }
-
-// * {
-//   box-sizing: border-box;
-// }
-// .welcome {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   font-family: sans-serif;
-//   h1 {
-//     font-size: 42px;  
-//     margin: auto;
-//   }
-//   form {
-//     margin: auto;
-//     input {
-//       width: 40vw;
-//       height: 3em;
-//       margin: .25rem;
-//     }
-//     button {
-//       margin: .25rem;
-//       height: 3em;
-//     }
-//   }
-// }
