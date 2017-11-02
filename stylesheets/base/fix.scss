@@ -13,8 +13,7 @@ html {
 }
 body {
   margin: 0;
-  line-height: 1;
-  font-family: sans-serif;
+  line-height: 1.5;
 }
 iframe {
   border: 0;
@@ -64,7 +63,7 @@ sup {
   line-height: 0;
 }
 strong {
-  font-weight: bold;
+  font-weight: 700;
 }
 figure {
   margin: 0;
@@ -88,7 +87,7 @@ button {
   font: inherit;
   -webkit-font-smoothing: inherit;
   letter-spacing: inherit;
-  background: none;
+  background: black;
   cursor: pointer;
   overflow: visible;
 }
