@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
-import TenDay from '../lib/TenDay';
+import Daily from '../lib/Daily';
 
 describe('TenDay unit testing', () => {
   it.skip('It should ', () => {
