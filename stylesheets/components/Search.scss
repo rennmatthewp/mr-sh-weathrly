@@ -1,0 +1,14 @@
+.search {
+  input {
+    vertical-align: middle;
+    font-size: 24px;
+    font-family: $body-font;
+    width: 40vw;
+    padding: .4em;
+  }
+  button {
+    background: white;
+    vertical-align: middle;
+    height: 3em;
+  }
+}

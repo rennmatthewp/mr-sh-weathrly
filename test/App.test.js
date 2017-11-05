@@ -4,10 +4,10 @@ import App from '../lib/App';
 
 describe('App unit testing', () => {
   
-  it('It should have a default state of newUser set to false', () => {
+  it('It should have a default state of newUser set to true', () => {
     const app = shallow(<App />);
 
-    expect( app.state('newUser') ).toEqual(false);
+    expect( app.state('newUser') ).toEqual(true);
   })
 
   it('It should have a default states of currentLocation and currentObservation set to null', () => {
