@@ -1,7 +1,7 @@
 {
-  "name": "react-starter-kit",
+  "name": "weatherly",
   "version": "1.0.0",
-  "description": "A good enough starter kit for a React project, I guess.",
+  "description": "An app that displays weather data a forecasts for a desired location",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/turingschool-examples/react-starter-kit.git"
+    "url": "https://github.com/rennmathhewp/mr-sh-weathrly"
   },
   "jest": {
     "moduleNameMapper": {
@@ -19,12 +19,12 @@
       "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
     }
   },
-  "author": "Steve Kinney",
+  "author": "Matt Renn & Spencer Herms",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/turingschool-examples/react-starter-kit/issues"
+    "url": "https://github.com/rennmatthewp/mr-sh-weathrly/issues"
   },
-  "homepage": "https://github.com/turingschool-examples/react-starter-kit",
+  "homepage": "https://github.com/rennmatthewp/mr-sh-weathrly/",
   "devDependencies": {
     "babel": "^6.5.2",
     "babel-core": "^6.24.1",
@@ -58,6 +58,7 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
+    "@rennmatthewp/complete-me": "git+https://github.com/rennmatthewp/complete-me.git",
     "font-awesome": "^4.7.0"
   }
 }
