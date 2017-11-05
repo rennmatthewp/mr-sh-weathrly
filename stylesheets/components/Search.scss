@@ -1,14 +1,18 @@
 .search {
   input {
     vertical-align: middle;
-    font-size: 24px;
+    font-size: 1.5em;
     font-family: $body-font;
     width: 40vw;
     padding: .4em;
   }
   button {
     background: white;
+    color: $dark-blue;
     vertical-align: middle;
     height: 3em;
+    outline: none;
+    font-weight: 600;
+    letter-spacing: 0.05em;
   }
 }
