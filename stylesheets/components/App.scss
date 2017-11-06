@@ -15,21 +15,43 @@ body {
 }
 
 .main-page {
-  background: linear-gradient($light-blue, $dark-blue) no-repeat;
+  background: linear-gradient($light-blue, rgb(211, 208, 208)) no-repeat;
   display: flex;
   height: 100%;
   flex-flow: column;
   width: 100%;
 }
 
+.top {
+  display: flex;
+  flex-direction: row;
+  height: 70vh;
+}
+
 .card {
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 0 5px 5px white;
+  display: flex;
+  height: 20vh;
+  justify-content: center;
   border: 1px solid white;
   width: 13%;
-  margin: 0.5em;
+  margin: 1em;
   margin-bottom: 5em;
+  border-radius: 10%;
+}
+
+.daily-card {
+
+}
+
+.hourly-card {
+
 }
 
 .current-weather {
+  border: 1px solid white;
   text-align: center;
   margin-bottom: 5em;
 }
@@ -37,6 +59,7 @@ body {
 .daily {
   display: flex;
   flex-flow: row;
+  justify-content: space-around;
 }
 
 .hourly {
