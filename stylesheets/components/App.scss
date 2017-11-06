@@ -1,0 +1,45 @@
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	box-sizing: border-box;
+    display: flex;
+	  min-height: 100%;
+    width: 100%;
+}
+
+#app {
+  width: 100vw;
+}
+
+.main-page {
+  background: linear-gradient($light-blue, $dark-blue) no-repeat;
+  display: flex;
+  height: 100%;
+  flex-flow: column;
+  width: 100%;
+}
+
+.card {
+  border: 1px solid white;
+  width: 13%;
+  margin: 0.5em;
+  margin-bottom: 5em;
+}
+
+.current-weather {
+  text-align: center;
+  margin-bottom: 5em;
+}
+
+.daily {
+  display: flex;
+  flex-flow: row;
+}
+
+.hourly {
+  display: flex;
+  flex-flow: row;
+}
