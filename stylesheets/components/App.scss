@@ -25,7 +25,22 @@ body {
 .top {
   display: flex;
   flex-direction: row;
-  height: 70vh;
+  height: 60vh;
+}
+
+.header {
+  margin: 2rem 0 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header h1 {
+  display: none;
+}
+
+.search {
+  box-shadow: 0 0 5px 5px white;
 }
 
 .card {
@@ -38,7 +53,7 @@ body {
   border: 1px solid white;
   width: 13%;
   margin: 1em;
-  margin-bottom: 5em;
+  //margin-bottom: ;
   border-radius: 10%;
 }
 
@@ -47,22 +62,31 @@ body {
 }
 
 .hourly-card {
-
+  //width: 5%;
 }
 
 .current-weather {
+  background-color: white;
+  box-shadow: 0 0 5px 5px white;
   border: 1px solid white;
+  border-radius: 10%;
   text-align: center;
-  margin-bottom: 5em;
+  margin: 0 2em 5em 1em;
 }
 
 .daily {
   display: flex;
   flex-flow: row;
   justify-content: space-around;
+  margin: 0 0 0 1rem;
 }
 
 .hourly {
   display: flex;
   flex-flow: row;
+  flex-wrap: wrap;
+  height: 8px;
+  width: 70vw;
+  justify-content: space-around;
+  margin: 0 1rem 0 0;
 }
