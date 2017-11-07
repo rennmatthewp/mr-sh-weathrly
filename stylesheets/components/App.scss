@@ -57,7 +57,10 @@ body {
 }
 
 .daily-card {
-  margin-bottom: 3rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hourly-card {
@@ -88,7 +91,7 @@ body {
   align-items: center;
   display: flex;
   flex-flow: row;
-  justify-content: space-around;
+  justify-content: center;
   margin: 0 1.3rem 0 3rem;
 }
 
