@@ -59,6 +59,7 @@
   },
   "dependencies": {
     "@rennmatthewp/complete-me": "git+https://github.com/rennmatthewp/complete-me.git",
-    "font-awesome": "^4.7.0"
+    "font-awesome": "^4.7.0",
+    "prop-types": "^15.6.0"
   }
 }
