@@ -3,6 +3,7 @@
   box-shadow: 0 0 5px 5px white;
 
   input {
+    border: none;
     vertical-align: middle;
     font-size: 1.5em;
     font-family: $body-font;
@@ -11,6 +12,7 @@
   }
   button {
     background: white;
+    border-radius: initial;
     color: $dark-blue;
     vertical-align: middle;
     height: 3em;
