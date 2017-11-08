@@ -4,10 +4,9 @@ import Card from '../lib/Card';
 
 describe('Card unit testing', () => {
   
-  it.skip('It should ', () => {
-    const card = shallow(<Card />);
-
-    expect().toEqual();
-  })
+  it('It should render Card', () => {
+    const card = shallow(<Card />)
+    expect(card).toBeDefined;
+  });
 
 })

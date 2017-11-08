@@ -2,44 +2,50 @@ import React from 'react';
 import { shallow, mount } from 'enzyme';
 import App from '../lib/App';
 
+global.localStorage = {
+  
+      getItem(key) {
+        if (!global.localStorage[key]){
+          return null;
+        } 
+        return JSON.stringify(global.localStorage[key]);
+      },
+      setItem (key, value) {
+        global.localStorage[key] = value;
+      }
+  };
+
 describe('App unit testing', () => {
   
-  it('It should have a default state of newUser set to true', () => {
-    const app = shallow(<App />);
-
-    expect( app.state('newUser') ).toEqual(true);
-  })
-
-  it('It should have a default states of currentLocation and currentObservation set to null', () => {
-    const app = shallow(<App />);
-
-    expect( app.state('currentLocation') ).toEqual(null);
-    expect( app.state('currentObservation') ).toEqual(null);    
-  })
-  
-  it('It should have a default states of currentLocation and currentObservation set to null', () => {
-    const app = shallow(<App />);
-
-    expect( app.state('currentLocation') ).toEqual(null);
-    expect( app.state('currentObservation') ).toEqual(null);    
-  })
-  
-  it('It should have a default states of hourlyForcast and dailyForcast which are empty arrays', () => {
-    const app = shallow(<App />);
-
-    expect( app.state('hourlyForecast').length ).toEqual(0);
-    expect( app.state('dailyForecast').length ).toEqual(0);
-  })
-
-  it.skip('should render App', () => {
+  it('should render App', () => {
     const app = shallow(<App />);
     
-    expect(app.find('.App').length).toEqual(1);
+    expect(app).toBeDefined;
   });
 
-  it.skip('should render CurrentWeather, Hourly and Daily', () => {
+  it('It should have a default state of location set to null', () => {
     const app = shallow(<App />);
 
+    expect( app.state('location') ).toEqual(null);
+  })
+
+  it('It should render Header when location is set to null', () => {
+    const app = shallow(<App />);
+
+    expect(app.find('Header').length).toEqual(1);
+    expect(app.find('CurrentWeather').length).toEqual(0);
+  });
+
+  it('should render CurrentWeather, Hourly and Daily when there is a location in state', () => {
+    const app = shallow(<App />);
+    expect(app.find('Header').length).toEqual(1);
+    expect(app.find('CurrentWeather').length).toEqual(0);
+    expect(app.find('Hourly').length).toEqual(0);
+    expect(app.find('Daily').length).toEqual(0);
+
+    app.setState({currentObservation: {}, hourlyForecast: [], dailyForecast: []})
+
+    expect(app.find('Header').length).toEqual(1);
     expect(app.find('CurrentWeather').length).toEqual(1);
     expect(app.find('Hourly').length).toEqual(1);
     expect(app.find('Daily').length).toEqual(1);
