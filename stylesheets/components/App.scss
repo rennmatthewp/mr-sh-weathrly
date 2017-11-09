@@ -119,6 +119,47 @@ body {
   margin: 0 1rem 0 0;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1140px) {
+  
+  .header {
+    justify-content: flex-start;
+    margin-left: 2rem;
+  }
+
+  .top {
+    flex-direction: column;
+    height: initial;
+  }
+
+  .hourly { 
+    margin-left: 1rem;
+    height: initial;
+    width: inherit;
+  }
+
+  .daily {
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 4rem 0 0 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+
+  .card {
+    width: inherit;
+  }
+
+  .current-weather {
+    width: inherit;
+  }
+
+  .hourly {
+    flex-flow: column;
+  }
+
+  .daily {
+    display: none;
+  }
 
 }
